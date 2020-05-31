@@ -1,6 +1,0 @@
-{
-  "name": "Kana Master",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
