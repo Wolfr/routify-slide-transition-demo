@@ -1,0 +1,24 @@
+/* ==========================================================================
+   c-scroll-context
+   ========================================================================== */
+
+.c-scroll-context {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-scroll-context > * {
+  flex: 0 1 auto;
+}
+
+// Browsers which fully support CSS Environment variables (iOS 11.2+).
+@supports (padding-top: env(safe-area-inset-top)) {
+  html {
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-top: env(safe-area-inset-top);
+    padding-top: var(--safe-area-inset-top);
+    padding-bottom: var(--safe-area-inset-bottom);
+    height: calc(100% + var(--safe-area-inset-top) );
+  }
+}

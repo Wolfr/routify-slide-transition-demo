@@ -1,0 +1,1 @@
+<h1 class="c-toolbar__title"><slot></slot></h1>

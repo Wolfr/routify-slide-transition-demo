@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Global variables - Prefixed with $g
+   ========================================================================== */
+
+$g-heading-color: #000;
+$g-text-color: #333;
+$g-primary-color: $green;
+$g-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+
+
+/* Component settings - Use $g- variables to override component !default settings
+   ========================================================================== */
+
+$c-button-primary-color: $g-primary-color;
+$c-toggle-primary-color: $g-primary-color;

@@ -1,0 +1,18 @@
+/* ==========================================================================
+  c-button-toolbar
+  ---
+  Works with: c-button
+   ========================================================================== */
+
+.c-button-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-button-toolbar .c-button {
+  margin-right: 0.5rem;
+}
+
+.c-button-toolbar .c-button:last-child {
+  margin-right: 0;
+}

@@ -1,0 +1,28 @@
+/* ==========================================================================
+  e-base
+  ---
+  Only base element styling
+   ========================================================================== */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #EEE;
+  -webkit-text-size-adjust:none;
+  color: $g-text-color;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}

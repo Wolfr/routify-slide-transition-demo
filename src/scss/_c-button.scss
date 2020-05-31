@@ -1,0 +1,100 @@
+/* ==========================================================================
+  c-button
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-button-primary-color: #0E83FC !default;
+$c-button-link-color: $c-button-primary-color !default;
+
+/* Component
+   ========================================================================== */
+
+.c-button {
+  padding: 0.8rem 1rem;
+  line-height: 1.4;
+  display: inline-flex;
+  border-radius: 0.4rem;
+  border: none;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: $g-font-family;
+  appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.c-button.c-button--icon-only {
+  padding: 0.8rem 0.8rem;
+  .svg-icon {
+    margin-top: 0;
+    position: relative;
+    top: 0.2rem;
+  }
+}
+
+a.c-button {
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+}
+
+/* Button skins
+   ========================================================================== */
+
+.c-button--default {
+  background: #DDD;
+  color: #333;
+}
+
+.c-button--ghost {
+  background: transparent;
+  border-color: transparent;
+  color: #333;
+}
+
+.c-button--primary {
+  background: $c-button-primary-color;
+  color: #FFF;
+  &:hover,
+  &:focus {
+    background: lighten($c-button-primary-color, 10%);
+  }
+  &:active {
+    background: darken($c-button-primary-color, 10%);
+  }
+}
+
+.c-button--link {
+  color: $c-button-link-color;
+}
+
+.c-button .svg-icon {
+  margin-top: 0.2rem;
+}
+
+/* Button variants
+   ========================================================================== */
+
+.c-button--block {
+    width: 100%;
+}
+
+.c-button__label {
+  flex: 1 0 auto;
+  margin-left: 0.4rem;
+}
+
+/* States
+   ========================================================================== */
+
+.c-button[disabled] {
+    opacity: 0.4;
+}
+
+.c-button__icon-only-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}

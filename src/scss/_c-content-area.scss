@@ -1,0 +1,11 @@
+/* ==========================================================================
+  c-content-area
+   ========================================================================== */
+
+.c-content-area {
+  background: #FFF;
+  flex: 1 1 auto;
+  overflow: scroll;
+   -webkit-overflow-scrolling: touch;
+  height: 100%;
+}

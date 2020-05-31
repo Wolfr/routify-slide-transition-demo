@@ -1,0 +1,56 @@
+/* ==========================================================================
+  c-navbar
+  ---
+  A container for navigational elements
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-bar-size-padding: 2rem !default;
+$c-bar-size-regular: 6.5rem !default;
+
+/* Component
+   ========================================================================== */
+
+.c-navbar {
+  padding: 0 $c-bar-size-padding;
+  height: $c-bar-size-regular;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.c-navbar--no-padding {
+  padding: 0;
+}
+
+.c-navbar--auto {
+  height: auto;
+}
+
+.c-navbar--white {
+  background: #FFF;
+}
+
+.c-navbar--alt {
+  background: #EEE;
+}
+
+/* Bordered equivalents
+   ========================================================================== */
+
+.c-navbar--bordered-top {
+  border-top: 0.1rem solid #CCC;
+}
+
+.c-navbar--bordered-bottom {
+  border-bottom: 0.1rem solid #CCC;
+}
+
+.c-navbar.c-navbar {
+  @media (-webkit-min-device-pixel-ratio: 1.3) {
+    border-width: 0.05rem;
+  }
+}
+

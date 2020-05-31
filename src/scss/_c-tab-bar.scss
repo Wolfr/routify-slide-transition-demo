@@ -1,0 +1,27 @@
+/* ==========================================================================
+  c-tab-bar
+   ========================================================================== */
+
+.c-tab-bar {
+    width: 100%;
+}
+
+.c-tab-bar__icons {
+    display: flex;
+}
+
+.c-tab-bar__icons > li {
+    flex: 1 0 33.3%;
+}
+
+.c-tab-bar__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto 0.2rem;
+}
+
+.c-tab-bar__icon svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
